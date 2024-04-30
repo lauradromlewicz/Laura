@@ -1,0 +1,33 @@
+###Professor, nosso projeto está rodando neste outro arquivo http, no seu infelizmente deu erros.
+
+# FUNCIONÁRIO ######################################
+
+### Cadastrar de Funcionario
+POST http://localhost:5243/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Eduardo Cardozo Dib",
+    "cpf" : "5655555"
+}
+
+
+
+### Obtenção de todos os funcionários
+GET http://localhost:5243/api/funcionario/listar
+
+
+
+# FOLHA ############################################
+### Criação de uma nova folha
+POST http://localhost:5243/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "valor" : 5,
+    "quantidade" : 70,
+    "funcionarioId" : 3
+}
+
+
+###Buscar folha
